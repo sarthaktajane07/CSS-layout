@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.q,.q1,.q2,.q3 {
+    border-style: solid;
+    padding: 10px;
+    border-color: #4a90e2; 
+}
+
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50; 
+    color: white;
+    padding: 10px;
+}
+
+
+.q1_card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #ecf0f1; 
+}
+
+.q1_image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.q1_info {
+    flex-grow: 1;
+}
+
+
+.q2_navbar ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    background-color: #3498db;
+}
+
+.q2_navbar li {
+    margin: 10px;
+}
+
+.q2_navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .q2_navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.q3_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.q3_sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #bdc3c7; 
+}
+
+.q3_main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #1abc9c;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .q3_container {
+        flex-direction: column;
+    }
+    .q3_sidebar {
+        width: 100%;
+    }
+    .q3_main-content {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1; 
+    color: #2c3e50; 
+}
+
+footer h1 {
+    font-size: 1.5em;
+}
